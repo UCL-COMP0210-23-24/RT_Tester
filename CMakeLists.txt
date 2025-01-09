@@ -1,3 +1,11 @@
+cmake_minimum_required(VERSION 3.16)
+project(RayTracingTesting
+  VERSION 0.0.1
+  LANGUAGES CXX
+)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 find_package(Catch2 3)
 if(NOT Catch2_FOUND)
   FetchContent_Declare(
