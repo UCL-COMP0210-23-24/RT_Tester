@@ -6,7 +6,7 @@ project(RayTracingTesting
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Catch2 3 REQUIRED)
+find_package(Catch2 REQURIED)
 
 add_executable(TestRayTracing ../source/Rendering.cpp ../source/VectorUtils.cpp testWeek1.cpp)
 target_include_directories(TestRayTracing PUBLIC ${CMAKE_SOURCE_DIR}/../include/)
